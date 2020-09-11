@@ -1,0 +1,24 @@
+{
+  "name": "@node-lightning/core",
+  "version": "0.1.0",
+  "description": "Types, interfaces, and core glue that holds it all together",
+  "scripts": {
+      "test": "../../node_modules/.bin/nyc --reporter=lcov --reporter=text --extension=.ts ../../node_modules/.bin/mocha --require ts-node/register --recursive \"__tests__/**/*.spec.*\"",
+      "lint": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json",
+      "build": "../../node_modules/.bin/tsc --project tsconfig.json",
+      "prepublish": "npm run build"
+  },
+  "keywords": ["node lightning", "core", "types"],
+  "author": "Brian Mancini <bmancini@gmail.com>",
+  "homepage": "https://github.com/altangent/node-lightning/tree/master/packages/<NAME>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/altangent/node-lightning.git"
+  },
+  "dependencies": {},
+  "publishConfig": {
+      "access": "public"
+  }
+}
